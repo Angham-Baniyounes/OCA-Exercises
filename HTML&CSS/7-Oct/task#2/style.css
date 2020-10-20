@@ -1,0 +1,24 @@
+.row {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.row div {
+    height: 18vh;
+    padding: 1.25rem;
+}
+.row > .col-12 {
+    background-color: #808080;
+    height: 3vh;
+}
+.row:nth-child(2) .col-7,  .row:nth-child(4) .col-7{
+    background-color: #0000FE;
+}
+.row:nth-child(3) div {
+    background-color: #FFFF00;
+}
+.row:nth-child(2) .col-4, .row:nth-child(4) .col-4 {
+    background-color:#ADD9E6;
+}
+.row:nth-child(5) div {
+    background-color: #FEA500;
+}

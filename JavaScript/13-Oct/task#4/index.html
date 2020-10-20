@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #4 Javascript 13.10</title>
+</head>
+<body>
+    
+
+    <script>
+        function largeNum() {
+            alert("please Enter 5 numbers");
+            debugger;
+            var nums = [];
+            var lNum;
+            for(var i = 0; i < 5; i++) {
+                var n = parseInt(prompt("Enter a number"));
+                nums.push(n);
+            }
+            function findLgNum(nums) {
+                var len = nums.length;
+                var lNum = nums[0];
+                for(var j = 1; j < len; j++) {
+                    if(nums[j] > lNum) {
+                        lNum = nums[j];
+                    }
+                }
+                document.write("The Largest Number = ",lNum);
+            } 
+            findLgNum(nums);
+        }
+        largeNum();
+    </script>
+</body>
+</html>

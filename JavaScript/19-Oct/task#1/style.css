@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 40rem;
+    height: 70vh;
+    margin: 5rem auto;
+    background-color: #2C2C2C;
+    border-radius: 2rem;
+    color: #cacaca;
+}
+form {
+    margin: auto;
+    padding: 2rem;
+}
+.title {
+    text-align: center;
+    border: none;
+    border-bottom: 4px solid #222;
+    padding: 2rem;
+}
+.row i {
+    position: absolute;
+}
+.row {
+    width: 100%;
+    margin-bottom: 0.85rem;
+}
+.icon {
+    padding: 1rem;
+    color: #7F8313;
+    text-align: left;
+}
+.inputField {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    border: 1px solid #7F7F7F;
+    border-radius: 1rem;
+    text-indent: 2rem;
+    background-color: #cacaca;
+}
+a {
+    color: #7F8313;
+}
+button {
+    float: right;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    font-size: 2rem;
+    border: 1px solid #7f8313;
+    background-color: #7F8313;
+    color: #cacaca;
+    width: 18rem;
+    margin-top: 1rem;
+}
+.borderRed {
+    border: 2px solid red;
+    border-radius: 1rem;
+}
+.borderGreen {
+    border: 2px solid green;
+    border-radius: 1rem;
+}

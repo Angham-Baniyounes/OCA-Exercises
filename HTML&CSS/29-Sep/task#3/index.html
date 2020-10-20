@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Lists</title>
+    <style>
+        .orangeLink {
+            color: lightsalmon
+        }
+        .redLink {
+            color: red;
+        }
+        p:first-of-type, ul ul {
+            color: rgb(0, 0, 255)
+        }
+        p:first-of-type {
+            font-size: 28px;
+        }
+        p:nth-of-type(2), p:nth-of-type(3) {
+            font-size: 26px;
+        }
+        p.pItems {
+            font-size: 30px;
+        }
+        .itemsList > li {
+            margin-bottom: 20px;
+        }
+        ul ul li:first-child {
+            font-weight: bold;
+        }
+        ul ul ul:last-of-type {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><ins>Have Fun Ehile Styling !</ins></h1>   
+    <hr>
+    <p>
+        Here is a text <a href="#" class="orangeLink">with a link</a>. Let's do it!
+    </p> 
+    <p>
+        We have more <a class="orangeLink" href="#">links</a> here ;
+    </p>
+    <p>
+        Is this a (<a href="#" class="orangeLink"><mark><ins>link</ins></mark></a>?).
+    </p>
+    <p class="pItems">
+        We have a list
+        <ul class="itemsList">
+            <li>
+                <b>Please,<a class="redLink" href="#">Click Me!</a></b>
+            </li>
+            <li>
+                Can you? let's count
+                <ul>
+                    <li>111</li>
+                    <li>222 <a href="#" class="redLink">Another Link</a></li>
+                    <li>333
+                        <ul>
+                            <li>red</li>
+                            <li>green</li>
+                            <li>blue <a href="#" class="redLink">Colors Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>That's Enough !</li>
+        </ul>
+    </p>
+</body>
+</html>

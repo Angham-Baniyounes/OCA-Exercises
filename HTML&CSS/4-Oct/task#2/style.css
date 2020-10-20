@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100vh;
+}
+.container > div {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 100vh;
+    font-size: 3em;
+}
+.fBox {
+    background-color: #FFA500;
+}
+.sBox {
+    background-color: #0000FF;
+}

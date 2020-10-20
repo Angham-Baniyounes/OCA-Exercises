@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Bootstrap 6.10</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form>
+            <div class="form-group">
+                <label for="fname" class="font-weight-bold">First Name:</label>
+                <input type="text" class="form-control" name="fname">
+            </div>
+            <div class="form-group">
+                <label for="lname" class="font-weight-bold">Last Name:</label>
+                <input type="text" class="form-control" name="lname">
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="male" name="male" class="custom-control-input">
+                    <label class="custom-control-label font-weight-bold" for="male">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="female" name="fmale" class="custom-control-input">
+                    <label class="custom-control-label font-weight-bold" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="DoB" class="font-weight-bold">Date of Birth:</label>
+                <input type="date" class="form-control" name="DoB">
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+    </div>
+</body>
+
+</html>

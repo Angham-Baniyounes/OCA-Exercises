@@ -1,0 +1,23 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+article {
+    border: 1.5px solid;
+    width: 70%;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.orangeMark {
+    background-color: lightsalmon;
+}
+.redColor {
+    border: 3px dotted red;
+    color: red;
+}
+
+.redColor p {
+    padding: 0;
+    border: 3px dotted red;
+}

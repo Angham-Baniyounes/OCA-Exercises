@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    background-color: rgb(109, 109, 109);
+}
+.container {
+    margin: 3.125rem auto;
+    border: 1.5px solid rgb(26, 197, 63);
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+}
+.container .numbers {
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+input, button {
+    width: 10rem;
+    height: 2rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+button { 
+    background-color: rgb(26, 197, 63);
+    color: #fcfbfd;
+    font-size: 0.75rem;
+}

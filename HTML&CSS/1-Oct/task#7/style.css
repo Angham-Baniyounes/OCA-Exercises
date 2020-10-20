@@ -1,0 +1,25 @@
+body {
+    background-color: #FF7FFF;
+}
+.flexArticles {
+    display: flex;
+    justify-content: start;
+}
+.flexArticles article {
+    width: 20%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #EAEAED;
+    margin-right: 10px;
+}
+.scrollArticle {
+    font-weight: bold;
+    margin: 15px 0;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+}
+.scrollArticle article {
+    width: 100%;
+    height: 80px;
+    overflow-y: scroll;
+}

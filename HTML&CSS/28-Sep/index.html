@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        th,
+        td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Test Table</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name:</th>
+                <th>Last Name:</th>
+                <th>Email</th>
+                <th>Phone Number:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Angham</td>
+                <td rowspan="3">bani Younes</td>
+                <td>mmmm@g.c</td>
+                <td>1346546412</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>nagham</td>
+                <td>aaa@m.n</td>
+                <td>354464</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>music</td>
+                <td>dddd@m.n</td>
+                <td>5412121</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <td>aannnnnna</td>
+                <td>ammm@m.n</td>
+                <td>6541212</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>aaaaa</td>
+                <td>AAAAAA</td>
+                <td>aaaa@aaa</td>
+                <td>21315135</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>nnnnn</td>
+                <td>NNNn</td>
+                <td>mnm@mm</td>
+                <td>5465465</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Table Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Login:</legend>
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter your Name:">
+            <br>
+            <label>Password :</label>
+            <input type="password" placeholder="Enter your password">
+            <br>
+            <label for="BOD">Your Birthday :</label>
+            <input type="date" name="BOD">
+            <br>
+            <label>Email :</label>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <br>
+            <label>Phone Number :</label>
+            <input type="number"  placeholder="Enter Your phone number">
+            <br>
+            <label>id :</label>
+            <input type="number"  placeholder="Enter Your id number">
+            <br>
+            <label>Choose colors:</label>
+            <input type="checkbox" name="color" id="white"> White 
+            <input type="checkbox" name="color" id="yellow"> Yellow 
+            <input type="checkbox" name="color" id="pink"> pink
+            <br>
+            <label for="browser" >Browser: </label>
+            <input type="radio" name="browser" id="google"> google
+            <input type="radio" name="browser" id="firefox"> firefox
+            <input type="radio" name="browser" id="opera"> opera
+            <br>
+            <label for="msg">Write your message</label>
+            <br>
+            <textarea name="msg" cols="30" rows="10" placeholder="your msg."></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+
+</html>

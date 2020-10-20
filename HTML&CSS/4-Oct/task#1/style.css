@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 15px;
+    padding: 10px;
+}
+.header {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    height: 20vh;
+}
+.content {
+    background-color: #FFA500;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 45vh;
+}
+.sidebar {
+    background-color: #008000;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    height: 45vh;
+}
+.footer {
+    background-color: #0000FF;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    height: 25vh;
+}

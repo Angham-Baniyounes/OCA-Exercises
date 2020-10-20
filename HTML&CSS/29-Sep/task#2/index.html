@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container {
+            width: 850px;
+            margin: 50px auto;
+        }
+        form {
+            text-align: center;
+            width: 80%;
+        }
+        fieldset {
+            text-align: center;
+            background-color:lightgoldenrodyellow;
+            width: 500px;
+            display: block;
+            justify-content: center;
+            border: 2px solid;
+        }
+        fieldset label {
+            margin-right: 45px;
+            width: 250px;
+            text-align: left;
+        }
+        fieldset label:nth-of-type(3) {
+            margin-right: 28px;
+        }
+        fieldset input {
+            margin-bottom: 15px;
+        }
+        form button {
+            position: relative;
+            right: 60px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="container">
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Personal details</legend>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname">
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname">
+                <br>
+                <label for="email">Email address</label>
+                <input type="email" name="email">
+                <br>
+                <label for="gender">Gender</label>
+                <input type="radio" name="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>City</legend>
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="Amman">Amman</option>
+                    <option value="Irbid">Irbid</option>
+                    <option value="Zarqa">Zarqa</option>
+                    <option value="Aqaba">Aqaba</option>
+                </select>
+            </fieldset>
+            <br>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>

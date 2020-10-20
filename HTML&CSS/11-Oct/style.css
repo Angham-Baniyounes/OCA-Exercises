@@ -1,0 +1,126 @@
+@font-face {
+    font-family: cartoonFont;
+    src: url('GoodMorning.ttf');
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    background-color: #5d8c98;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 1.25rem;
+}
+div[class ^= 'col-'] {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-3 {
+    border-left: 2px solid #E6D7B5;
+    margin-left: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: -10px 0px 20px #E6D7B5;
+}
+.col-3 p {
+    padding-left: 2rem;
+}
+.squirtle {
+    height: 22rem;
+    filter: drop-shadow(10px 10px 14px #fcfbfd);
+}
+.name {
+    transform: rotate(-90deg);
+    color: #C287AB;
+    font-family: cartoonFont;
+    text-shadow: 0px 30px 10px #85C9DA;
+    white-space: nowrap;
+    animation: typeText 3s steps(20);
+    overflow: hidden;
+    width: 20ch;
+}
+.description h2 {
+    color: #85C9DA;
+    text-shadow: 7px 7px 7px #b48b83;
+    font-family: cartoonFont;
+}
+.description p {
+    margin-top: 1.15rem;
+    color: #fbfcfd;   
+}
+@keyframes typeText {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+        padding: 0.5rem;
+        height: 51vh;
+        margin: 10rem auto;
+    }
+    div[class ^= 'col-'] {
+        padding: 0.2rem;
+        width: 50%;
+        margin-top: 0rem;
+    }
+    .squirtle {
+        height: 9rem;
+    }
+    .col-3 {
+        padding: 0.2rem;
+        width: 56%;
+        margin-top: 1rem;
+    }
+    .col-3 p {
+        margin-left: 0.25rem;
+        width: fit-content;
+        font-size: 0.5rem;
+    }
+    .name {
+        overflow: visible;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+        height: 51vh;
+        margin: 10rem auto;
+    }
+    div[class ^= 'col-'] {
+        padding: 0;
+        width: 60%;
+    }
+    .squirtle {
+        height: 9rem;
+    }
+    .col-3 {
+        margin-top: 0.5rem;
+        margin-left: 0.2rem;
+    }
+    .col-3 p {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        text-align: left;
+    }
+    .description p {
+        margin-top: 0.5rem;
+    }
+    .name {
+        overflow: visible;
+    }
+}

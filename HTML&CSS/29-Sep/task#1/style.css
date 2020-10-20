@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: content-box;
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    /* box-shadow: 2px 2px red; */
+}
+
+header {
+    padding: 30px ;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+}
+.logo{
+    overflow: hidden;
+    display: flex;
+}
+header .nameLogo {
+    position: relative;
+    bottom: -50px;
+    padding-left: 20px;
+}
+header .imgLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+header h1 {
+    float: left;
+}
+nav,
+footer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 2.5px solid;
+    border-bottom: 2.5px solid;
+}
+
+nav ul,
+.content aside ul,
+footer ul {
+    list-style: none;
+}
+
+nav ul li,
+footer ul li {
+    display: inline;
+    padding: 30px;
+}
+nav ul li a,
+footer ul li a {
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.content aside {
+    width: 30%;
+    margin-left: 50px;
+}
+.content aside ul li {
+    margin-top: 20px;
+}
+.content section {
+    margin: 30px;
+    width: 65%;
+    display: block;
+}
+.content section article {
+    /* width: 900px; */
+    /* width: 100%; */
+}
+article{
+    width: 700px;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid;
+}
+article:last-of-type{
+    border-bottom: none;
+}
+.content section article p {
+    width: 600px;
+    margin-top: 20px;
+}
+.tableSection, .formSection {
+    width: 40%;
+    margin: 10px auto;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr th, table tr td {
+    padding: 15px;
+}
+table, thead, tbody, tfoot, tr, th, td {
+    border: 1.5px solid orange;
+}
+form fieldset {
+    padding: 30px 50px;
+}
+label {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+label:nth-of-type(3) {
+    padding-right: 30px;
+}
+input {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 250px;
+    background: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 1.5px solid orange;
+}
+form button {
+    width: 100px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+footer {
+    height: 30px;
+}

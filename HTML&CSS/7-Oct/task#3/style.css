@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
+.container .item {
+  padding: 1.75rem;
+  font-size: 1.75rem;
+  background-color: #FFD507;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .item:first-child, .container .item:nth-child(2), .container .item:nth-child(4), .container .item:nth-child(7), .container .item:nth-child(11) {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.container .item:first-child, .container .item:nth-child(3), .container .item:nth-child(6), .container .item:nth-child(10), .container .item:nth-child(16) {
+  grid-column-end: 13;
+}
+
+.container .item:nth-child(2) {
+  grid-column-end: 7;
+}
+
+.container .item:nth-child(3) {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+}
+
+.container .item:nth-child(4), .container .item:nth-child(12) {
+  grid-column-end: 5;
+}
+
+.container .item:nth-child(5), .container .item:nth-child(13) {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+}
+
+.container .item:nth-child(5), .container .item:nth-child(14) {
+  grid-column-end: 9;
+}
+
+.container .item:nth-child(6), .container .item:nth-child(15) {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+}
+
+.container .item:nth-child(7) {
+  grid-column-end: 4;
+}
+
+.container .item:nth-child(8) {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+}
+
+.container .item:nth-child(8), .container .item:nth-child(13) {
+  grid-column-end: 7;
+}
+
+.container .item:nth-child(9) {
+  grid-column-end: 10;
+}
+
+.container .item:nth-child(9), .container .item:nth-child(14) {
+  -ms-grid-column: 7;
+      grid-column-start: 7;
+}
+
+.container .item:nth-child(10) {
+  -ms-grid-column: 10;
+      grid-column-start: 10;
+}
+
+.container .item:nth-child(11) {
+  grid-column-end: 3;
+}
+
+.container .item:nth-child(12) {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+.container .item:nth-child(15) {
+  grid-column-end: 11;
+}
+
+.container .item:nth-child(16) {
+  -ms-grid-column: 11;
+      grid-column-start: 11;
+}
+/*# sourceMappingURL=style.css.map */

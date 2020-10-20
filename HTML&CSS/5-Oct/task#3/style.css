@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 1rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0.5rem 1rem;
+    grid-gap: 0.5rem;
+}
+.grid-item {
+    background-color: #FFFF00;
+    padding: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.grid-item:first-of-type {
+    order: 8;
+}
+.grid-item:nth-of-type(5) {
+    order: 7;
+}
+.grid-item:nth-of-type(3) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
