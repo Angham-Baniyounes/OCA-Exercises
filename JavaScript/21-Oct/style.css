@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #337898;
+}
+.container {
+    width: 60vw;
+    margin: 3rem auto;
+}
+form {
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 2em auto;
+} 
+input {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #dddddd;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.row button {
+    padding: 1em;
+    border: 2px solid yellowgreen;
+    border-radius: 1.25em;
+    background-color: yellowgreen;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+ul {
+    margin: 2em auto;
+}
