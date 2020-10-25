@@ -6,28 +6,22 @@ let valueIn = document.getElementById("valueIn");
 let result = document.getElementById("result");
 localBtn.addEventListener("click", createItemsLocal);
 sessionBtn.addEventListener("click", createItemsSession);
+clr.addEventListener("click", clearItems);
+
 
 function createItemsLocal() {
     localStorage.setItem(keyIn.value, valueIn.value);
-    getresult(localStorage);
+    result.innerHTML += `<li>${keyIn.value} : ${localStorage.getItem(keyIn.value)} </li>`;
 }  
 function createItemsSession() {
     sessionStorage.setItem(keyIn.value, valueIn.value);
-    getresult(sessionStorage);
-
+    result.innerHTML += `<li>${keyIn.value} : ${sessionStorage.getItem(keyIn.value)} </li>`;
 }
-clr.addEventListener("click", clearItems);
+
 function clearItems() {
     localStorage.clear();
     sessionStorage.clear();
     keyIn.value = "";
     valueIn.value = "";
     result.innerHTML = "";
-}
-function getresult(objName) {
-    var len = objName.length;
-    for (var i = 0; i < len; i++) {
-        result.innerHTML = `<li>${keyIn.value} : ${valueIn.value} </li>`;
-    }
-    return result.innerHTML;
 }
